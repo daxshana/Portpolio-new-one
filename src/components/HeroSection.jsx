@@ -1,9 +1,7 @@
-
-
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import image1 from '../img/IMG-20241009-WA0003.jpg';
+import { FaLinkedin, FaGithub } from 'react-icons/fa'; // You can use react-icons for LinkedIn and GitHub icons
 
 const Hero = () => {
   return (
@@ -39,7 +37,25 @@ const Hero = () => {
               A passionate full stack developer dedicated to creating seamless web applications and enhancing user experiences. Let's build something amazing together!
             </motion.p>
 
-              
+            {/* Links to LinkedIn and GitHub */}
+            <div className="flex space-x-6 mt-6">
+              <a
+                href="http://linkedin.com/in/daxshana-kirushnavelu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-500 hover:text-cyan-300 text-lg"
+              >
+                <FaLinkedin className="h-8 w-8" />
+              </a>
+              <a
+                href="http://github.com/daxshana" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-500 hover:text-cyan-300 text-lg"
+              >
+                <FaGithub className="h-8 w-8" />
+              </a>
+            </div>
           </div>
 
           {/* Right Content */}
